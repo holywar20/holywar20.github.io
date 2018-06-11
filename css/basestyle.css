@@ -1,0 +1,115 @@
+
+body{
+	background:white;
+	color:black;
+	font-family:monospace;
+
+	text-align:center;
+}
+
+
+ul{
+
+}
+
+ul li{
+
+}
+
+.max-container{
+	max-width:800px;
+	min-width:800px;
+	min-height:1100px;
+	max-height:1100px;
+	margin-left:auto;
+	margin-right:auto;
+
+	border:1px dotted grey;
+}
+
+pre{
+	text-align:left;
+	font-size:.9em;
+}
+
+span.red{
+	color:darkred;
+	font-weight: 800;
+}
+
+span.green{
+	color:green;
+	font-weight: 600;
+}
+
+span.purple{
+	color:purple;
+	font-weight: 800;
+}
+
+.span-icon-text{
+	color:white;
+	background-color:black;
+	font-size:1.2em;
+	font-weight:bold;
+
+	padding:3px;
+}
+
+.icon-javascript, .icon-php, .icon-css, .icon-laravel, .icon-angular, .icon-vue, .icon-sql{
+	display:flex;
+	align-items:center;
+
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-javascript{
+	background-image: url("../techicons/javascript.png");
+}
+
+.icon-css{
+	background-image: url("../techicons/css.png");
+}
+
+.icon-angular{
+	background-image: url("../techicons/angular.png");
+}
+
+.icon-vue{
+	background-image: url("../techicons/Vue.png")
+}
+
+.icon-laravel{
+	background-image: url("../techicons/laravel.png");
+}
+
+.icon-sql{
+	background-image: url("../techicons/mysql.png");
+}
+
+.icon-php{
+	background-image: url("../techicons/php.png");
+}
+
+.subtext{
+	font-size:.7em;
+}
+
+div.section-offset{
+	margin-left:-90px;
+	padding: 15px;
+}
+
+div.page-header{
+	background-color:lightgray;
+	border-bottom: 1px solid darkslateblue;
+
+	padding:8px;
+	width:785px; /* -17px to account for padding */
+}
+
+.low-padding{
+	padding:5px;
+	margin:5px;
+}
