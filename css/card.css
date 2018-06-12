@@ -6,7 +6,12 @@ div.card{
 	background-color:lightblue;
 }
 
-div.card div.header{
+div.borderless-card{
+	margin:5px;
+}
+
+div.card div.header ,
+div.borderless-card div.header{
 
 	border-bottom:2px solid grey;
 
@@ -18,7 +23,8 @@ div.card div.header{
 	background-color:royalblue;
 }
 
-div.card div.text-section{
+div.card div.text-section,
+div.borderless-card div.header{
 
 	padding:5px;
 	border-radius:10px 10px 0 0;
@@ -29,6 +35,7 @@ div.sub-section{
 	text-align:left;
 }
 
-div.card div.section{
+div.card div.section,
+div.borderless-card div.header{
 	padding:5px;
 }
