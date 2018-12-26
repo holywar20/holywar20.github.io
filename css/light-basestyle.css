@@ -1,20 +1,20 @@
 :root{
-	--color-primary: rgb(115, 61, 139);
+	--color-primary: rgb(129, 95, 139);
 	--color-primary-text: white;
 
-	--color-secondary: #081e74;
-	--color-secondary-text: white;
+	--color-secondary: rgb(108, 157, 240);
+	--color-secondary-text: black;
 
 	--color-tertiary: #147500;
-	--color-tertiary-text: white;
+	--color-tertiary-text: black;
 
-	--color-background-primary: #110f11;
-	--color-background-primary-text:white;
+	--color-background-primary: #e1dee0;
+	--color-background-primary-text:black;
 
-	--color-background-secondary: lightblue;
+	--color-background-secondary: #9be68a;
 	--color-quintary-text:black;
 
-	--main-bg-color: black;
+	--main-bg-color: white;
 
 	--width-medium:150px;
 
@@ -31,12 +31,12 @@ a:hover{
 }
 
 a:visited{
-	color:white;
+	color:black;
 }
 
 body{
-	background:black;
-	color:white;
+	background:white;
+	color:black;
 	font-family:var(--base-font);
 	text-align:center;
 }
@@ -52,6 +52,7 @@ body{
 	max-height:1100px;
 	margin-left:auto;
 	margin-right:auto;
+
 }
 
 pre{
@@ -186,7 +187,7 @@ img.logo-planet{
 }
 
 .glow-text{
-	color: rgb(2, 200, 200);
+	color: black;
 	text-shadow:
 			1 0 2px #00AADD,
 			0 1 5px #00AADD;

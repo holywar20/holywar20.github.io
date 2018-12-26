@@ -1,41 +1,169 @@
-div.card{
-	margin:5px;
-	border-radius:10px 10px 0 0;
-	border:3px solid darkslateblue;
+div.borderless-card, div.card{
+	margin-left:3px;
+	margin-right:3px;
+	margin-top:3px;
+	margin-bottom:3px;
+	background-color:var(--color-background-primary);
 
-	background-color:lightblue;
+	border-bottom-right-radius: 10px ;
+	border-bottom-left-radius: 10px ;
+
 }
 
-div.borderless-card{
-	margin:5px;
+div.right-stripe{
+	box-shadow:
+			inset 3em 1em var(--color-secondary);
 }
 
-div.card div.header ,
+div.stack-right{
+	box-shadow:
+			0 1px 1px rgba(0,0,0,0.15),
+			-10px 10px 0 -5px #eee,
+			-10px 10px 1px -4px rgba(0,0,0,0.15),
+			-20px 20px 0 -10px #eee,
+			-20px 20px 1px -9px rgba(0,0,0,0.15);
+	margin-left:15px;
+}
+
+div.stack-left{
+	box-shadow:
+			0 1px 1px rgba(0,0,0,0.15),
+			10px 10px 0 -5px #eee,
+			10px 10px 1px -4px rgba(0,0,0,0.15),
+			20px 20px 0 -10px #eee,
+			20px 20px 1px -9px rgba(0,0,0,0.15);
+	margin-right:15px;
+}
+
+div.stack-down{
+	box-shadow:
+			0 1px 1px rgba(0,0,0,0.15),
+			0px 10px 0 -5px #eee,
+			0px 10px 1px -4px rgba(0,0,0,0.15),
+			0px 20px 0 -10px #eee,
+			0px 20px 1px -9px rgba(0,0,0,0.15);
+}
+
+div.card div.header,
 div.borderless-card div.header{
+	background-color: var(--main-bg-color);
+	color:var( white );
 
-	border-bottom:2px solid grey;
+	border-radius:0px 0px 20px 20px;
+	border-bottom:3px solid var(--color-secondary);
 
 	font-weight:bolder;
-	font-size: 2em;
+	font-size: 1.4em;
+}
 
-	border-radius:7px 7px 0 0;
+div.slant{
+	transform: skew(-10%, 0)
+}
 
-	background-color:royalblue;
+div.unslant{
+	transform: skew(+10%, 0)
+}
+
+div.text-section,
+div.section,
+div.sub-section-header,
+div.sub-section{
+	padding:5px;
+	margin:0px;
+}
+
+div.text-section p{
+	text-align:justify;
+	padding:10px;
 }
 
 div.card div.text-section,
-div.borderless-card div.header{
-
-	padding:5px;
-	border-radius:10px 10px 0 0;
-	text-align:left;
-}
-
+div.borderless-card div.text-section,
 div.sub-section{
+	font-family:var(--reading-font);
+	text-align:left;
+	font-size: .8em;
+}
+
+div.borderless-card div.header{
+	padding:5px;
+}
+
+div.section div.sub-section-header{
+	font-size:1.4em;
+	border-radius: 10px;
+
+	margin:10px;
+}
+
+div.borderless-card div.sub-section{
+	border-radius: 10px;
+	margin:5px;
+}
+
+div.image-item{
+	display:flex;
+	justify-content:space-between;
+	background: var(--color-primary);
+	border-radius: 10px;
+
+	height:75px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:7px;
+	overflow:hidden;
+}
+
+div.image-item div{
+	background-size: 85px auto;
+	background-repeat: no-repeat;
+	background-position-x:30px;
+	width: 100%;
+
 	text-align:left;
 }
 
-div.card div.section,
-div.borderless-card div.header{
-	padding:5px;
+div.image-item div span{
+	height:20px;
+	position:relative;
+
+	top:3px;
+	border-radius: 10px 0px;
+}
+
+.myicon-git{
+	background:url('../techicons/git.png');
+}
+
+.myicon-cvs{
+	background:url('../techicons/cvs.png');
+	background-position-x:10px;
+}
+
+.myicon-boot{
+	background:url('../techicons/bootstrap.png');
+}
+
+.myicon-godot{
+	background:url('../techicons/godot.png');
+}
+
+.myicon-jquery{
+	background:url('../techicons/jquery.png');
+}
+
+.myicon-apache{
+	background:url('../techicons/apache.png');
+}
+
+.myicon-linux{
+	background:url('../techicons/linux.png');
+}
+
+.myicon-photoshop{
+	background:url('../techicons/photoshop.png');
+}
+
+.myicon-3dsmax{
+	background:url('../techicons/3dsmax.ico');
 }
